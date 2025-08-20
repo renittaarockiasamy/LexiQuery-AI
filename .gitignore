@@ -1,0 +1,44 @@
+# =====================================
+# Python Ignore Rules
+# =====================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# =====================================
+# Project Specific Ignore Rules
+# =====================================
+# Ignore sensitive files
+.env
+config.yaml
+
+# Ignore vector DB indexes (FAISS etc.)
+*.faiss
+*.pkl
+
+# Ignore uploaded files (user documents)
+uploads/
+*.pdf
+*.docx
+*.csv
+*.txt
+
+# =====================================
+# System Ignore Rules
+# =====================================
+.DS_Store
+Thumbs.db
