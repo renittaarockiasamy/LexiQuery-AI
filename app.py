@@ -8,7 +8,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-from transformers import pipeline
+from transformers.pipelines import pipeline
 
 # ---------------------------
 # Config
@@ -142,3 +142,4 @@ if uploaded:
 
 # Footer note
 st.caption("Note: Scanned PDFs (images) need OCR to extract text. This app expects real text inside files.")
+
